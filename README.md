@@ -56,3 +56,33 @@ Sizes for training and validation can be seen from the figures.
 Now, the model has been downloaded from its github page and the model training has been started. These are the last 5 epochs for model training.
 <br>
 ![](img/RMS-50/last%205%20epochs%20of%20training.PNG)
+
+After the training completed, frozen top layers has become unfrozen and the model tuning has been started. The reason why we do that:
+<br>
+![](img/Convolution_base+own_classifier.jpg)
+
+* This is VGG16 model without top layers. We downloaded it and then we freeze this to build our own classifier.
+```python
+baseModel = VGG16(weights='imagenet', include_top=False, input_shape=INPUT_SHAPE)            
+model = Sequential()    
+model.add(baseModel)
+model.add(Flatten())
+model.add(Dense(256, activation='relu'))
+model.add(Dense(1, activation='sigmoid'))
+```
+<br>
+![](img/VGG16_base+own_classifier.jpg)
+<br>
+
+* This is our own classifier. We've add 256 hidden layer and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
+
+```python
+def freezeModel(baseModel):    
+    for layer in baseModel.layers:
+        layer.trainable = False 
+        
+freezeModel(baseModel)
+```
+Now, it's time to tune the model. These are the last 5 epochs for model tuning.
+
+![](img/last%205%20epochs%20of%20tuning.PNG)
