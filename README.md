@@ -147,7 +147,7 @@ It seems like, mistakes have been increased.
 **But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.**
 
 
-# RMSprop Optimization Algorithm
+# ADAM Optimization Algorithm
 Now, it's time to do the same things with ADAM optimization algorithm. First, I will try with 100 epochs again (50 for training-50 for tuning)
 
 ```python
@@ -243,3 +243,33 @@ Finally, let's compare the results with the other models. First, the confusion m
 
 **Now, total accuracy and total loss for testing. Accuracy has decreased very very low when we compare it with the first ADAM model, but loss is significantly improved with decreasing by %14.8 (0.162-0.138). So, the model with 65 epochs is more efficient to use.**
 
+# SGD Optimization Algorithm
+Lastly, I will do the same things with SGD optimizer and select the efficient model. First, I will build a model with 100 epochs. (50-50)
+```python
+model.compile(loss=LOSS_TYPE,
+                  optimizer=optimizers.SGD(lr=LR),
+                  metrics=['acc'])  
+```
+
+```python
+-python modelBuilding.py
+```
+Here is the last 5 epochs for training.
+
+
+![](img/last%205%20epochs%20for%20training.PNG)
+
+
+And the last 5 epochs for tuning.
+
+
+![](img/last%205%20epochs%20tuning.PNG)
+
+
+It's time to observe the loss and accuracy figures and decide if we can rebuild a model with lower epoch number or not.
+
+
+![](img/acc%20figure%20sgd.PNG)
+
+
+![](img/loss%20figure%20sgd.PNG)
