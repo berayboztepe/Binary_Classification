@@ -316,7 +316,7 @@ And when we check testing accuracy and loss, accuracy has decreased, and loss ha
 ![](img/SGD-50/Final/acc%20and%20loss%20total.PNG)
 
 
-**I have tried two more different epoch numbers for this optimizer, and I got the best result with 100 epochs.**
+**I have tried two more different epoch numbers for this optimizer, and I got the best result with 100 epochs. We can also understand that we're not gonna use this optimization algorithm due to its results. In any case, other algorithms will perform better.**
 
 # Result Analysis and Summary
 We have 7 different models with different optimization algorithms and different 
