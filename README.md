@@ -378,3 +378,7 @@ And finally, let's do a prediction.
 
 **So, they both are predicted true.**
 
+# To see the models and images that I've used
+
+* [Images](img/Used%20Images/dogs%20vs%20cats)
+
