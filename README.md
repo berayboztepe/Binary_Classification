@@ -22,7 +22,7 @@ First, activating the environment.
 -conda activate tf-gpu
 ```
 Then, I set the parameters. I will build a binary classification model and for the loss function, I will use binary_crossentropy. Batch sizes 8 for train and validation. The model which I use is VGG16. So, input shape is (224, 224, 3). I will build a model with 100 epochs first (50 for training and 50 for tuning) and then I will try to find the most effective epoch number for each optimizer.
-```
+```python
 CLASS_MODE = 'binary'
 LOSS_TYPE ='binary_crossentropy'    
 CLASSES_NUMBER = 0
@@ -49,6 +49,6 @@ So, I run the function.
 
 Sizes of training and validation can be seen from the figures.
 <br>
-![](img/figure1.PNG)
+![](img/RMS-50/figure1.PNG)
 <br>
-![](img/figure2.PNG)
+![](img/RMS-50/figure2.PNG)
