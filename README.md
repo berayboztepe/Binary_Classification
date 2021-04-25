@@ -144,7 +144,7 @@ It seems like, mistakes have been increased.
 ![](img/RMS-50/Final/acc%20and%20loss%20total%20for%20precision%20for%20the%20last%20rms%20model.PNG)
 
 
-But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.
+**But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.**
 
 
 # RMSprop Optimization Algorithm
@@ -169,5 +169,42 @@ Now, the top layers has been unfrozen annd these are the last 5 epochs for tunin
 
 
 ![](img/ADAM-50/last%205%20epochs%20for%20tuning%20adam.PNG)
+
+
+It's time to check accuracy and loss figures.
+
+
+![](img/ADAM-50/accuracy%20figure%20for%20adam.PNG)
+
+
+![](img/ADAM-50/loss%20figure%20for%20adam.PNG%20)
+
+
+Validation loss gets its lowest value at 93. epoch. So let's rerun the model with 93 epochs (50 training-43 tuning) and see if there is any improvement or not.
+
+
+![](img/ADAM-50/Final/last%205%20epochs.PNG)
+
+
+And the loss figure:
+
+
+![](img/ADAM-50/Final/loss%20figure.PNG)
+
+
+And it's time to compare
+```python
+-python modelTesting.py
+```
+First the confusion matrix. When we observe that, there are 26 mistakes just as the model with 100 epochs and RMSprop optimizer. 
+
+
+![](img/ADAM-50/conf%20matrix%20adam.PNG)
+
+
+And the total test accuracy and test loss. The same accuracy with the model with 100 epochs RMSprop optimizer, but the loss is more better.
+
+
+![](img/ADAM-50/acc%20and%20loss%20total%20for%20adam.PNG)
 
 
