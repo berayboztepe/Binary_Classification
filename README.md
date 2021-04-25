@@ -117,6 +117,9 @@ And the loss figure:
 
 
 It's time to compare these 2 results. Let's see if we could improve our model or not.
+```python
+-python modelTesting.py
+```
 
 
 ![](img/RMS-50/conf%20matrix.PNG)
@@ -132,3 +135,15 @@ Total test accuracy is almost 0.96 which is very good and the loss is 0.24. Let'
 
 
 ![](img/RMS-50/Final/conf%20matrix%20for%20the%20last%20rms%20model.PNG)
+
+
+It seems like, mistakes have been increased. 
+
+
+![](img/RMS-50/Final/acc%20and%20loss%20total%20for%20precision%20for%20the%20last%20rms%20model.PNG)
+
+
+But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.
+
+
+
