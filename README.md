@@ -181,6 +181,9 @@ It's time to check accuracy and loss figures.
 
 
 Validation loss gets its lowest value at 93. epoch. So let's rerun the model with 93 epochs (50 training-43 tuning) and see if there is any improvement or not.
+```python
+-python modelTesting.py
+```
 
 
 ![](img/ADAM-50/Final/last%205%20epochs.PNG)
@@ -208,10 +211,19 @@ And the total test accuracy and test loss. The same accuracy with the model with
 ![](img/ADAM-50/acc%20and%20loss%20total%20for%20adam.PNG)
 
 
-And these are the result for the model with 93 epochs.
+And these are the result for the model with 93 epochs. False positives for cats has increased so much while false positives for dogs decreasing. We have total 35 mistakes now. And when we check for accuracy and loss, it can be seen that, accuracy decreased and loss increased. That means, we have worse model than we have before. So, the model with 93 epochs is not useful. What about if we try the second lowest value which is in 65. epoch? Let's try.
 
 
 ![](img/ADAM-50/Final/conf%20matrix.PNG)
 
 
 ![](img/ADAM-50/Final/total%20acc%20and%20loss.PNG)
+
+
+```python
+-python modelBuilding.py
+```
+Again first, last 5 epochs for model tuning.
+
+
+![](img/ADAM-50/Final%202/last%2025%202adam%2022.PNG)
