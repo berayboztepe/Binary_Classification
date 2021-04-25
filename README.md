@@ -182,7 +182,7 @@ It's time to check accuracy and loss figures.
 
 Validation loss gets its lowest value at 93. epoch. So let's rerun the model with 93 epochs (50 training-43 tuning) and see if there is any improvement or not.
 ```python
--python modelTesting.py
+-python modelBuilding.py
 ```
 
 
@@ -226,4 +226,4 @@ And these are the result for the model with 93 epochs. False positives for cats 
 Again first, last 5 epochs for model tuning.
 
 
-![](img/ADAM-50/Final%202/last%2025%202adam%2022.PNG)
+![](img/ADAM-50/Final 2/last%2025%202adam%2022.PNG)
