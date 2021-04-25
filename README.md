@@ -75,7 +75,7 @@ model.add(Dense(1, activation='sigmoid'))
 ![](img/VGG16_base+own_classifier.jpg)
 
 
-* This is our own classifier. We've add 256 hidden layer and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
+* This is our own classifier. We've add 224,224,3 input layer and with flatten, it has become 512 layes, 256 hidden layers and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
 
 ```python
 def freezeModel(baseModel):    
@@ -87,3 +87,10 @@ freezeModel(baseModel)
 Now, it's time to tune the model. These are the last 5 epochs for model tuning.
 
 ![](img/RMS-50/last%205%20epochs%20of%20tuning.PNG)
+
+Let's check accuracy and loss figures and see if we can use less epochs to get better result or not.
+<br>
+![](img/RMS-50/val_loss%20acc.PNG)
+<br>
+![](img/RMS-50/loss figure%202.PNG)
+
