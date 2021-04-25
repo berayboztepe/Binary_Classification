@@ -257,34 +257,34 @@ model.compile(loss=LOSS_TYPE,
 Here are the last 5 epochs for training.
 
 
-![](img/last%205%20epochs%20for%20training.PNG)
+![](img/SGD-50/last%205%20epochs%20for%20training.PNG)
 
 
 And the last 5 epochs for tuning.
 
 
-![](img/last%205%20epochs%20tuning.PNG)
+![](img/SGD-50/last%205%20epochs%20tuning.PNG)
 
 
 It's time to observe the loss and accuracy figures and decide if we can rebuild a model with lower epoch number or not.
 
 
-![](img/acc%20figure%20sgd.PNG)
+![](img/SGD-50/acc%20figure%20sgd.PNG)
 
 
-![](img/loss%20figure%20sgd.PNG)
+![](img/SGD-50/loss%20figure%20sgd.PNG)
 
 
 It seems, the validation loss gets its lowest value at 85. epoch. Let's rerun it. Last 5 epochs.
 
 
-![](img/Final/last%205%20epochs.PNG)
+![](img/SGD-50/Final/last%205%20epochs.PNG)
 
 
 The loss figure:
 
 
-![](img/Final/loss%20figure.PNG)
+![](img/SGD-50/Final/loss%20figure.PNG)
 
 
 So, let's compare.
@@ -295,25 +295,25 @@ So, let's compare.
 First, the confusion matrix for the first model. We have 107 mistakes. That's quite much.
 
 
-![](img/conf%20matrix.PNG)
+![](img/SGD-50/conf%20matrix.PNG)
 
 
 And accuracy and loss for testing. Accuracy is 0.82 and loss is 0.40. This model is worse than all others. Let's see if we can improve it or not.
 
 
-![](img/accuracy%20and%20loss%20sgd.PNG)
+![](img/SGD-50/accuracy%20and%20loss%20sgd.PNG)
 
 
 First, confusion matrix. Now, we have 110 mistakes.
 
 
-![](img/Final/conf%20matrix.PNG)
+![](img/SGD-50/Final/conf%20matrix.PNG)
 
 
 And when we check testing accuracy and loss, accuracy has decreased, and loss has increased. This model is even worse.
 
 
-![](img/Final/acc%20and%20loss%20total.PNG)
+![](img/SGD-50/Final/acc%20and%20loss%20total.PNG)
 
 
 **I have tried two more different epoch numbers for this optimizer, and I got the best result with 100 epochs.**
