@@ -110,3 +110,9 @@ As it can be seen, at the 70. epoch, the validation loss has its lowest value. S
 ![](img/RMS-50/Final/last%205%20epochs%20for%20tuning%20for%20the%20last%20rms%20model.PNG)
 
 
+And the loss figure:
+
+
+![](img/RMS-50/Final/loss%20figure%20for%20final%20rms%20model.PNG)
+
+
