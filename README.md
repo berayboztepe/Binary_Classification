@@ -211,7 +211,7 @@ And the total test accuracy and test loss. The same accuracy with the model with
 ![](img/ADAM-50/acc%20and%20loss%20total%20for%20adam.PNG)
 
 
-And these are the result for the model with 93 epochs. False positives for cats has increased so much while false positives for dogs decreasing. We have total 35 mistakes now. And when we check for accuracy and loss, it can be seen that, accuracy decreased and loss increased. That means, we have worse model than we have before. So, the model with 93 epochs is not useful. What about if we try the second lowest value which is in 65. epoch? Let's try.
+**And these are the result for the model with 93 epochs. False positives for cats has increased so much while false positives for dogs decreasing. We have total 35 mistakes now. And when we check for accuracy and loss, it can be seen that, accuracy decreased and loss increased. That means, we have worse model than we have before. So, the model with 93 epochs is not useful. What about if we try the second lowest value which is in 65. epoch? Let's try.**
 
 
 ![](img/ADAM-50/Final/conf%20matrix.PNG)
@@ -227,3 +227,19 @@ Again first, last 5 epochs for model tuning.
 
 
 ![](img/ADAM-50/Final%202/last%205%20adam%202.PNG)
+
+
+The loss figure:
+
+
+![](img/ADAM-50/Final%202/loss%20adam2.PNG)
+
+
+Finally, let's compare the results with the other models. First, the confusion matrix. We now have 27 mistakes. 7 false positives for cat and 20 false positives for dog.
+
+
+![](img/ADAM-50/Final%202/conf%20matrix%20adam%202.PNG)
+
+
+**Now, total accuracy and total loss for testing. Accuracy has decreased very very low when we compare it with the first ADAM model, but loss is significantly improved with decreasing by %14.8 (0.162-0.138). So, the model with 65 epochs is more efficient to use.**
+
