@@ -41,3 +41,14 @@ model.compile(loss=LOSS_TYPE,
                   optimizer=optimizers.RMSprop(lr=LR),
                   metrics=['acc'])  
 ```
+So, I run the function.
+
+```python
+-python modelBuilding.py
+```
+
+Sizes of training and validation can be seen from the figures.
+<br>
+![](img/figure1.PNG)
+<br>
+![](img/figure2.PNG)
