@@ -17,7 +17,6 @@ I have 800 train images (400 for cat-400 for dog), and 600 images for test and v
 # Python Code
 
 First, activating the environment.
-'''
-
-conda activate tf-gpu
-'''
+```python
+-conda activate tf-gpu
+```
