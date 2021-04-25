@@ -321,23 +321,42 @@ And when we check testing accuracy and loss, accuracy has decreased and loss has
 # Result Analysis and Summary
 We have 7 different models with different optimization algorithms and different 
 epoch numbers:
-• RMSprop Algorithm with 100 epochs approximately:
-o Accuracy: 0.96
-o Loss: 0.24
-• RMSprop Algorithm with 70 epochs approximately:
-o Accuracy: 0.95
-o Loss: 0.15
-• ADAM Algorithm with 100 epochs approximately:
-o Accuracy: 0.96
-o Loss: 0.16• ADAM Algorithm with 93 epochs approximately:
-o Accuracy: 0.94
-o Loss: 0.21
-• ADAM Algorithm with 65 epochs approximately
-o Accuracy: 0.96
-o Loss: 0.14
-• SGD Algorithm with 100 epochs approximately:
-o Accuracy: 0.82
-o Loss: 0.41
-• SGD Algorithm with 85 epochs approximately:
-o Accuracy: 0.82
-o Loss: 0.46
+
+1-) RMSprop Algorithm with 100 epochs approximately:
+
+* Accuracy: 0.96
+* Loss: 0.24
+
+
+2-) RMSprop Algorithm with 70 epochs approximately:
+
+* Accuracy: 0.95
+* Loss: 0.15
+
+
+3-) ADAM Algorithm with 100 epochs approximately:
+
+* Accuracy: 0.96
+* Loss: 0.16 
+
+
+4-) ADAM Algorithm with 93 epochs approximately:
+
+* Accuracy: 0.94
+* Loss: 0.21
+
+5-) ADAM Algorithm with 65 epochs approximately
+
+* Accuracy: 0.96
+* Loss: 0.14
+
+6-) SGD Algorithm with 100 epochs approximately:
+
+* Accuracy: 0.82
+* Loss: 0.41
+
+7-) SGD Algorithm with 85 epochs approximately:
+
+* Accuracy: 0.82
+* Loss: 0.46
+
