@@ -208,3 +208,10 @@ And the total test accuracy and test loss. The same accuracy with the model with
 ![](img/ADAM-50/acc%20and%20loss%20total%20for%20adam.PNG)
 
 
+And these are the result for the model with 93 epochs.
+
+
+![](img/ADAM-50/Final/conf%20matrix.PNG)
+
+
+![](img/ADAM-50/Final/total%20acc%20and%20loss.PNG)
