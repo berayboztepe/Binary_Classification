@@ -47,8 +47,12 @@ So, I run the function.
 -python modelBuilding.py
 ```
 
-Sizes of training and validation can be seen from the figures.
+Sizes for training and validation can be seen from the figures.
 <br>
 ![](img/RMS-50/figure1.PNG)
 <br>
 ![](img/RMS-50/figure2.PNG)
+
+Now, the model has been downloaded from its github page and the model training has been started. These are the last 5 epochs for model training.
+<br>
+![](img/RMS-50/last 5 epochs of training.PNG)
