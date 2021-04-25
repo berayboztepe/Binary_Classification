@@ -55,4 +55,4 @@ Sizes for training and validation can be seen from the figures.
 
 Now, the model has been downloaded from its github page and the model training has been started. These are the last 5 epochs for model training.
 <br>
-![](img/RMS-50/last 5 epochs of training.PNG)
+![](img/RMS-50/last%205%20epochs%20of%20training.PNG)
