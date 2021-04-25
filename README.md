@@ -1,4 +1,4 @@
-Hello, this is a deep learning project that I did during my Erasmus Program with my professor at Politechnika Lubelska. The goal of the project is to classify dog vs cat images with 3 different optimizer and different epoch numbers, evaluate them and choose the effective model.
+# Hello, this is a deep learning project that I did during my Erasmus Program with my professor at Politechnika Lubelska. The goal of the project is to classify dog vs cat images with 3 different optimizer and different epoch numbers, evaluate them and choose the effective model.
     
 The tools will be used during this project are Anaconda to create environment, jupyter and spyder to code, some libraries such as TensorFlow, Keras, Matplotlib, Seaborn, Pandas, Numpy, Sklearn.
 
@@ -226,4 +226,4 @@ And these are the result for the model with 93 epochs. False positives for cats 
 Again first, last 5 epochs for model tuning.
 
 
-![](img/ADAM-50/Final 2/last%2025%202adam%2022.PNG)
+![](img/ADAM-50/Final%202/last%205%20adam%202.PNG)
