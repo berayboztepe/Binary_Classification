@@ -107,6 +107,6 @@ Let's check accuracy and loss figures and see if we can use less epochs to get b
 As it can be seen, at the 70. epoch, the validation loss has its lowest value. So that means, there is an overfitting problem after this epoch number. Let's build a new model and check if we get more efficient model or not.
 
 
-![](img/RMS-50/Final/last%205%20epochs%20%20for%20tuning%20for%20the%20last%20rms%20model.PNG)
+![](img/RMS-50/Final/last%205%20epochs%20for%20tuning%20for%20the%20last%20rms%20model.PNG)
 
 
