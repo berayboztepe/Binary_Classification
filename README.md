@@ -34,3 +34,10 @@ VAL_BATCH_SIZE = 8
 TRAINING_EPOCHS = 50
 TUNNING_EPOCHS = 50
 ```
+
+The first model that I will build is using RMSprop optimization algorithm. The metrics will be accuracy for classification model.
+```python
+model.compile(loss=LOSS_TYPE,
+                  optimizer=optimizers.RMSprop(lr=LR),
+                  metrics=['acc'])  
+```
