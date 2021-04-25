@@ -53,14 +53,18 @@ Sizes for training and validation can be seen from the figures.
 <br>
 ![](img/RMS-50/figure2.PNG)
 
+
 Now, the model has been downloaded from its github page and the model training has been started. These are the last 5 epochs for model training.
-<br>
+
+
 ![](img/RMS-50/last%205%20epochs%20of%20training.PNG)
+
 
 After the training completed, frozen top layers has become unfrozen and the model tuning has been started. The reason why we do that:
 
 
 ![](img/Convolution_base+own_classifier.jpg)
+
 
 * This is VGG16 model without top layers. We downloaded it and then we freeze this to build our own classifier.
 ```python
@@ -71,6 +75,7 @@ model.add(Flatten())
 model.add(Dense(256, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 ```
+
 
 ![](img/VGG16_base+own_classifier.jpg)
 
@@ -86,11 +91,15 @@ freezeModel(baseModel)
 ```
 Now, it's time to tune the model. These are the last 5 epochs for model tuning.
 
+
 ![](img/RMS-50/last%205%20epochs%20of%20tuning.PNG)
 
+
 Let's check accuracy and loss figures and see if we can use less epochs to get better result or not.
-<br>
+
+
 ![](img/RMS-50/val_loss%20acc.PNG)
-<br>
+
+
 ![](img/RMS-50/loss figure%202.PNG)
 
