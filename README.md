@@ -9,4 +9,5 @@ I have 800 train images (400 for cat-400 for dog), and 600 images for test and v
 
 **Example Images**
 ![](img/cat.9390.jpg)
+<br>
 ![](img/dog.9638.jpg)
