@@ -61,7 +61,7 @@ Now, the model has been downloaded from its github page and the model training h
 ![](img/RMS-50/last%205%20epochs%20of%20training.PNG)
 
 
-After the training completed, frozen top layers has become unfrozen and the model tuning has been started. The reason why we do that:
+After the training completed, frozen top layers have become unfrozen, and the model tuning has been started. The reason why we do that:
 
 
 ![](img/Convolution_base+own_classifier.jpg)
@@ -81,7 +81,7 @@ model.add(Dense(1, activation='sigmoid'))
 ![](img/VGG16_base+own_classifier.jpg)
 
 
-* This is our own classifier. We've add input layers and with flatten, it has become 512 layers, 256 hidden layers and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
+* This is our own classifier. We've added input layers and with flatten, it has become 512 layers, 256 hidden layers and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
 
 ```python
 def freezeModel(baseModel):    
@@ -132,7 +132,7 @@ When we check the confusion matrix, we have 16 false positives for cat and 10 fo
 ![](img/RMS-50/acc%20and%20losstotal%20for%20precision.PNG)
 
 
-Total test accuracy is almost 0.96 which is very good and the loss is 0.24. Let's see the model with 70 epochs.
+Total test accuracy is almost 0.96 which is very good, and the loss is 0.24. Let's see the model with 70 epochs.
 
 
 ![](img/RMS-50/Final/conf%20matrix%20for%20the%20last%20rms%20model.PNG)
@@ -144,7 +144,7 @@ It seems like, mistakes have been increased.
 ![](img/RMS-50/Final/acc%20and%20loss%20total%20for%20precision%20for%20the%20last%20rms%20model.PNG)
 
 
-**But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.**
+**But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decreasing by %37.5. So, the model with 70 epochs is more efficient to use.**
 
 
 # ADAM Optimization Algorithm
@@ -159,13 +159,13 @@ model.compile(loss=LOSS_TYPE,
 ```python
 -python modelBuilding.py
 ```
-Here is the last 5 epochs of training.
+Here are the last 5 epochs of training.
 
 
 ![](img/ADAM-50/last%205%20epochs%20for%20training%20ADAM.PNG)
 
 
-Now, the top layers has been unfrozen annd these are the last 5 epochs for tuning.
+Now, the top layers have been unfrozen and these are the last 5 epochs for tuning.
 
 
 ![](img/ADAM-50/last%205%20epochs%20for%20tuning%20adam.PNG)
@@ -180,7 +180,7 @@ It's time to check accuracy and loss figures.
 ![](img/ADAM-50/loss%20figure%20for%20adam.PNG%20)
 
 
-Validation loss gets its lowest value at 93. epoch. So let's rerun the model with 93 epochs (50 training-43 tuning) and see if there is any improvement or not.
+Validation loss gets its lowest value at 93. epoch. So, let's rerun the model with 93 epochs (50 training-43 tuning) and see if there is any improvement or not.
 ```python
 -python modelBuilding.py
 ```
@@ -205,13 +205,13 @@ First the confusion matrix. When we observe that, there are 26 mistakes just as 
 ![](img/ADAM-50/conf%20matrix%20adam.PNG)
 
 
-And the total test accuracy and test loss. The same accuracy with the model with 100 epochs RMSprop optimizer, but the loss is more better.
+And the total test accuracy and test loss. The same accuracy with the model with 100 epochs RMSprop optimizer, but the loss is much better.
 
 
 ![](img/ADAM-50/acc%20and%20loss%20total%20for%20adam.PNG)
 
 
-**And these are the result for the model with 93 epochs. False positives for cats has increased so much while false positives for dogs decreasing. We have total 35 mistakes now. And when we check for accuracy and loss, it can be seen that, accuracy decreased and loss increased. That means, we have worse model than we have before. So, the model with 93 epochs is not useful. What about if we try the second lowest value which is in 65. epoch? Let's try.**
+**And these are the result for the model with 93 epochs. False positives for cats have increased so much while false positives for dogs decreasing. We have total 35 mistakes now. And when we check for accuracy and loss, it can be seen that accuracy decreased and loss increased. That means, we have worse model than we have before. So, the model with 93 epochs is not useful. What about if we try the second lowest value which is in 65. epoch? Let's try.**
 
 
 ![](img/ADAM-50/Final/conf%20matrix.PNG)
@@ -241,7 +241,7 @@ Finally, let's compare the results with the other models. First, the confusion m
 ![](img/ADAM-50/Final%202/conf%20matrix%20adam%202.PNG)
 
 
-**Now, total accuracy and total loss for testing. Accuracy has decreased very very low when we compare it with the first ADAM model, but loss is significantly improved with decreasing by %14.8 (0.162-0.138). So, the model with 65 epochs is more efficient to use.**
+**Now, total accuracy and total loss for testing. Accuracy has decreased very low when we compare it with the first ADAM model, but loss is significantly improved with decreasing by %14.8 (0.162-0.138). So, the model with 65 epochs is more efficient to use.**
 
 # SGD Optimization Algorithm
 Lastly, I will do the same things with SGD optimizer and select the efficient model. First, I will build a model with 100 epochs. (50-50)
@@ -254,7 +254,7 @@ model.compile(loss=LOSS_TYPE,
 ```python
 -python modelBuilding.py
 ```
-Here is the last 5 epochs for training.
+Here are the last 5 epochs for training.
 
 
 ![](img/last%205%20epochs%20for%20training.PNG)
@@ -287,7 +287,7 @@ The loss figure:
 ![](img/Final/loss%20figure.PNG)
 
 
-So let's compare.
+So, let's compare.
 ```python
 -python modelTesting.py
 ```
@@ -310,13 +310,13 @@ First, confusion matrix. Now, we have 110 mistakes.
 ![](img/Final/conf%20matrix.PNG)
 
 
-And when we check testing accuracy and loss, accuracy has decreased and loss has increased. This model is even worse.
+And when we check testing accuracy and loss, accuracy has decreased, and loss has increased. This model is even worse.
 
 
 ![](img/Final/acc%20and%20loss%20total.PNG)
 
 
-**I have tried two more different epoch numbers for this optimizer and I got the best result with 100 epochs.**
+**I have tried two more different epoch numbers for this optimizer, and I got the best result with 100 epochs.**
 
 # Result Analysis and Summary
 We have 7 different models with different optimization algorithms and different 
@@ -360,7 +360,7 @@ epoch numbers:
 * Accuracy: 0.82
 * Loss: 0.46
 
-**So, the most effective model is the one which built with ADAM optimization algorithm and 65 epoch numbers. We got the highest accuracy and the lowest loss in this model. Of course the model can be improved better with more images, different epoch numbers, differen optimization algorithms etc. but this is what I can do with my GPU.**
+**So, the most effective model is the one which built with ADAM optimization algorithm and 65 epoch numbers. We got the highest accuracy and the lowest loss in this model. Of course, the model can be improved better with more images, different epoch numbers, different optimization algorithms, different loss and activation functions even etc. but this is what I can do best with my GPU.**
 
 # Prediction
 
