@@ -116,3 +116,19 @@ And the loss figure:
 ![](img/RMS-50/Final/loss%20figure%20for%20final%20rms%20model.PNG)
 
 
+It's time to compare these 2 results. Let's see if we could improve our model or not.
+
+
+![](img/RMS-50/conf%20matrix.PNG)
+
+
+When we check the confusion matrix, we have 16 false positives for cat and 10 for dog. So, it's just 26 mistakes of 600 images.
+
+
+![](img/RMS-50/acc%20and%20losstotal%20for%20precision.PNG)
+
+
+Total test accuracy is almost 0.96 which is very good and the loss is 0.24. Let's see the model with 70 epochs.
+
+
+![](img/RMS-50/Final/conf%20matrix%20for%20the%20last%20rms%20model.PNG)
