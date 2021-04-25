@@ -58,6 +58,7 @@ Now, the model has been downloaded from its github page and the model training h
 ![](img/RMS-50/last%205%20epochs%20of%20training.PNG)
 
 After the training completed, frozen top layers has become unfrozen and the model tuning has been started. The reason why we do that:
+
 <br>
 ![](img/Convolution_base+own_classifier.jpg)
 
@@ -85,4 +86,4 @@ freezeModel(baseModel)
 ```
 Now, it's time to tune the model. These are the last 5 epochs for model tuning.
 
-![](img/last%205%20epochs%20of%20tuning.PNG)
+![](img/RMS-50/last%205%20epochs%20of%20tuning.PNG)
