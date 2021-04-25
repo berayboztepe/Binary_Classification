@@ -54,6 +54,7 @@ Sizes for training and validation can be seen from the figures.
 ![](img/RMS-50/figure2.PNG)
 
 
+# RMSprop Optimization Algorithm
 Now, the model has been downloaded from its github page and the model training has been started. These are the last 5 epochs for model training.
 
 
@@ -104,7 +105,7 @@ Let's check accuracy and loss figures and see if we can use less epochs to get b
 ![](img/RMS-50/loss%20figure%202.PNG)
 
 
-As it can be seen, at the 70. epoch, the validation loss has its lowest value. So that means, there is an overfitting problem after this epoch number. Let's build a new model and check if we get more efficient model or not.
+First 50 epochs for training. We need to check after the green line at the middle for if we get more efficient model or not. As it can be seen, at the 70. epoch, the validation loss has its lowest value. So that means, there is an overfitting problem after this epoch number. Let's rerun the model with 70 epochs (50 for training-20 for tuning) and check if we get more efficient model or not.
 
 
 ![](img/RMS-50/Final/last%205%20epochs%20for%20tuning%20for%20the%20last%20rms%20model.PNG)
@@ -145,5 +146,28 @@ It seems like, mistakes have been increased.
 
 But when we check total test accuracy and test loss, our accuracy has decreased but not significantly much. But when we check difference of losses, our loss has decreased from 0.24 to 0.15 which means, our loss is significantly improved with decrasing by %37.5. So, the model with 70 epochs is more efficient to use.
 
+
+# RMSprop Optimization Algorithm
+Now, it's time to do the same things with ADAM optimization algorithm. First, I will try with 100 epochs again (50 for training-50 for tuning)
+
+```python
+model.compile(loss=LOSS_TYPE,
+                  optimizer=optimizers.Adam(lr=LR),
+                  metrics=['acc'])  
+```
+
+```python
+-python modelBuilding.py
+```
+Here is the last 5 epochs of training.
+
+
+![](img/ADAM-50/last%205%20epochs%20for%20training%20ADAM.PNG)
+
+
+Now, the top layers has been unfrozen annd these are the last 5 epochs for tuning.
+
+
+![](img/ADAM-50/last%205%20epochs%20for%20tuning%20adam.PNG)
 
 
