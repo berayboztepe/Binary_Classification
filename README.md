@@ -59,7 +59,7 @@ Now, the model has been downloaded from its github page and the model training h
 
 After the training completed, frozen top layers has become unfrozen and the model tuning has been started. The reason why we do that:
 
-<br>
+
 ![](img/Convolution_base+own_classifier.jpg)
 
 * This is VGG16 model without top layers. We downloaded it and then we freeze this to build our own classifier.
@@ -71,9 +71,9 @@ model.add(Flatten())
 model.add(Dense(256, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 ```
-<br>
+
 ![](img/VGG16_base+own_classifier.jpg)
-<br>
+
 
 * This is our own classifier. We've add 256 hidden layer and its activation function is relu and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers which and tune the model with them to get more efficient model.
 
