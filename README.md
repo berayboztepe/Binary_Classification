@@ -273,3 +273,46 @@ It's time to observe the loss and accuracy figures and decide if we can rebuild 
 
 
 ![](img/loss%20figure%20sgd.PNG)
+
+
+It seems, the validation loss gets its lowest value at 85. epoch. Let's rerun it. Last 5 epochs.
+
+
+![](img/Final/last%205%20epochs.PNG)
+
+
+The loss figure:
+
+
+![](img/Final/loss%20figure.PNG)
+
+
+So let's compare.
+```python
+-python modelTesting.py
+```
+
+First, the confusion matrix for the first model. We have 107 mistakes. That's quite much.
+
+
+![](img/conf%20matrix.PNG)
+
+
+And accuracy and loss for testing. Accuracy is 0.82 and loss is 0.40. This model is worse than all others. Let's see if we can improve it or not.
+
+
+![](img/accuracy%20and%20loss%20sgd.PNG)
+
+
+Last
+
+First, confusion matrix. Now, we have 110 mistakes.
+
+
+![](img/Final/conf%20matrix.PNG)
+
+
+And when we check testing accuracy and loss, accuracy has decreased and loss has increased. This model is even worse.
+
+
+![](img/Final/acc%20and%20loss%20total.PNG)
