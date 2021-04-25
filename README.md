@@ -12,3 +12,11 @@ I have 800 train images (400 for cat-400 for dog), and 600 images for test and v
 ![](img/cat.9390.jpg)
 <br>
 ![](img/dog.9638.jpg)
+
+
+# Python Code
+
+First, activating the environment.
+'''Python
+    -conda activate tf-gpu
+'''
