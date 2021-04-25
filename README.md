@@ -360,3 +360,4 @@ epoch numbers:
 * Accuracy: 0.82
 * Loss: 0.46
 
+**So, the most effective model is the one which built with ADAM optimization algorithm and 65 epoch numbers. We got the highest accuracy and the lowest loss in this model. Of course the model can be improved better with more images, different epoch numbers, differen optimization algorithms etc. but this is what I can do with my GPU.**
