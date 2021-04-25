@@ -5,4 +5,8 @@ The tools will be used during this project are Anaconda to create environment, j
 
 # Characteristics of the data
 
+I have 800 train images (400 for cat-400 for dog), and 600 images for test and validation both (300 for cat-300 for dog). 
 
+**Example Images**
+![](img/cat.9390.jpg)
+![](img/dog.9638.jpg)
