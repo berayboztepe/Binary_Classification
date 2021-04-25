@@ -304,8 +304,6 @@ And accuracy and loss for testing. Accuracy is 0.82 and loss is 0.40. This model
 ![](img/accuracy%20and%20loss%20sgd.PNG)
 
 
-Last
-
 First, confusion matrix. Now, we have 110 mistakes.
 
 
@@ -316,3 +314,30 @@ And when we check testing accuracy and loss, accuracy has decreased and loss has
 
 
 ![](img/Final/acc%20and%20loss%20total.PNG)
+
+
+**I have tried two more different epoch numbers for this optimizer and I got the best result with 100 epochs.**
+
+# Result Analysis and Summary
+We have 7 different models with different optimization algorithms and different 
+epoch numbers:
+• RMSprop Algorithm with 100 epochs approximately:
+o Accuracy: 0.96
+o Loss: 0.24
+• RMSprop Algorithm with 70 epochs approximately:
+o Accuracy: 0.95
+o Loss: 0.15
+• ADAM Algorithm with 100 epochs approximately:
+o Accuracy: 0.96
+o Loss: 0.16• ADAM Algorithm with 93 epochs approximately:
+o Accuracy: 0.94
+o Loss: 0.21
+• ADAM Algorithm with 65 epochs approximately
+o Accuracy: 0.96
+o Loss: 0.14
+• SGD Algorithm with 100 epochs approximately:
+o Accuracy: 0.82
+o Loss: 0.41
+• SGD Algorithm with 85 epochs approximately:
+o Accuracy: 0.82
+o Loss: 0.46
