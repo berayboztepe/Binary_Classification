@@ -81,7 +81,7 @@ model.add(Dense(1, activation='sigmoid'))
 ![](img/VGG16_base+own_classifier.jpg)
 
 
-* This is our own classifier. We've added input layers and with flatten, it has become 512 layers, 256 hidden layers and its activation function is Rectifier (relu) and 1 output layer with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers and tune the model with them to get more efficient model.
+* This is our own classifier. We've added input layers and with flatten, it has become 512 neurons, 256 hidden layer neurons and their activation function is Rectifier (relu) and 1 output neuron with sigmoid activation function. With this model, we did the training. After the training completed, we unfrozen the top layers and tune the model with them to get more efficient model.
 
 ```python
 def freezeModel(baseModel):    
